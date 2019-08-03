@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Cambridge Dictionary Audio Downloader",
+  "version": "0.0.0",
+  "author": "Yi-Shan Chen",
+  "description": "An addon to show download link of audio of word.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://dictionary.cambridge.org/*"],
+      "js": ["audio-dom-modifier.js"],
+      "css": ["audio-dom-modifier.css"]
+    }
+  ]
+}
